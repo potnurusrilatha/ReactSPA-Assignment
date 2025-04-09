@@ -1,0 +1,22 @@
+Header component :
+Desktop Navigation:
+        Navigation component
+            Arryay of navlinks from data file
+            NavItem component
+
+        PageTitle
+
+        search component
+            Icon
+        Location component
+            location Icon
+    Mobile :
+        MobileNavigation component
+            MenuIcon
+            state to show Menu
+
+            Array of links from data file
+            NavItem component
+
+
+

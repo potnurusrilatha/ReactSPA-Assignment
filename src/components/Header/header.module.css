@@ -1,0 +1,147 @@
+.header {
+  box-shadow: 0px 5px 5px 0px rgba(212,204,212,1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(30, 74, 48);
+    
+}
+
+.active {
+  color: rgb(30, 74, 48);; 
+  font-weight: bold;
+  position: relative;
+}
+
+.desktopNav {
+  display: flex;
+  gap: 3rem;
+  margin-right: 2rem;
+  color: rgb(30, 74, 48);
+  font-weight: bold;
+    
+}
+
+.desktopNav
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; 
+  width: 80%; 
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: rgb(30, 74, 48);;
+} 
+
+.mobileMenuButton {
+  display: none;
+}
+  
+.desktopNav div:hover {
+  color: rgb(8, 238, 8);
+}
+  
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  padding: 2rem;
+  align-items: center;
+  background-color: rgb(30, 74, 48);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+  
+  .mobileMenu div:hover {
+    color: rgb(225, 9, 9);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* RESPONSIVE STYLES */
+
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  /* Show the mobile menu button (hamburger) */
+  .mobileMenuButton {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  /* Hide the desktop navigation */
+  .desktopNav {
+    display: none;
+  }
+
+  /* Show mobile menu when activated */
+  .mobileMenu.active {
+    display: flex;
+  }
+
+  /* Mobile Menu Button (Hamburger) Styling */
+  .mobileMenuButton {
+    font-size: 2rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    z-index: 101; /* To make sure it stays above other elements */
+  }
+}
+
+/* Specific adjustments for very small screens, e.g., 328px and below */
+@media (max-width: 328px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the content */
+    padding: 5px 0; /* Reduce padding */
+  }
+  .pageTitle {
+    font-size: 1rem;
+  }
+  .desktopNav {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 1rem;
+    align-items: center;
+    margin-right: 0; /* Reset margin */
+  }
+
+  .mobileMenuButton {
+    font-size: 1.8rem; /* Adjust button size */
+  }
+
+  .desktopNav div,
+  .mobileMenu div {
+    font-size: 1.4rem; /* Adjust text size for small screens */
+    padding: 0.8rem 0; /* Adjust spacing */
+  }
+}
+

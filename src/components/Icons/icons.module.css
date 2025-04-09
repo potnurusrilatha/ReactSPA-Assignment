@@ -1,0 +1,37 @@
+.iconsWrapper {
+  display: flex;
+  gap: 15px; /* Space between icon and text */
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column; /* Icon on top, text below */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ width: 100%; /* Space between icon and text */
+}
+
+.iconsearch,
+.iconmapline {
+  color: rgb(30, 74, 48);
+  
+}
+
+.iconText {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(30, 74, 48);
+}
+
+@media screen and (max-width: 768px) {
+  .iconWrapper {
+      gap: 3px
+      
+  }
+
+  .iconText {
+      font-size: 0.875rem;
+  }
+}
+  
