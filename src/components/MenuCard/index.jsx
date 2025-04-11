@@ -1,16 +1,17 @@
 import { ShoppingCart } from "@phosphor-icons/react"
 import styles from './menuCard.module.css'
+import { getImageUrl } from "../../utils/function"
 
 
-const Menucard = ({coffee}) => {
+const Menucard = ({item}) => {
   return (
     <div className={styles.menuCard}>
       <div className={styles.menuImage}>
-        <img src={coffee.img} alt="img" />
+        <img src={getImageUrl(item.image)} alt={item.image} />
       </div>
       <div className={styles.card}>
-        <h3>{coffee.title}</h3>
-        <h3>{coffee.vlaue}</h3>
+        <h3 className={styles.menuImage}>{item.name}</h3>
+        <h3 className={styles.menuimage}>{item.price}</h3>
       </div>
       <div>
         <div className={styles.buttons}>

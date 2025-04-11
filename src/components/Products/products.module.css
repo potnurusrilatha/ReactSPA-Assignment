@@ -1,0 +1,127 @@
+.productContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  .productHeaderText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .productHeader {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+  }
+  
+  .producthomeSection {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+  }
+  
+  .producthomeSection img {
+    width: 100vw;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+}
+  
+.productText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 800px; */
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+  
+.productText h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+  
+.productText p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 1500px;
+    color: black;
+}
+
+.formContainer {
+    display: flex;
+    width:100%;
+    min-height: 70vh;
+    padding: 60px 20px;
+}
+
+.productImage1,
+.productImage2,
+.productImage3 {
+    flex:1;
+    overflow: hidden;
+}
+
+.productImage1 img,
+.productImage2 img,
+.productImage3 img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.productFormText {
+    flex: 1;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 74, 48);
+}
+
+.productFormText {
+    max-width: 800px;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+      
+.productText h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+      
+.productText p {
+   text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+}
+

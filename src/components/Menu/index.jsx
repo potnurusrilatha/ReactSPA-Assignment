@@ -16,8 +16,8 @@ const Menu = () => {
     
       <div className={styles.menuContainer}>
         {/* <Menucard img={img1} title="americano" /> */}
-        {CoffeItem.map((coffee) => (
-            <Menucard key={coffee.title} coffee={coffee}/>
+        {CoffeItem.map((item) => (
+            <Menucard key={item.title} item={item}/>
         ))}
       </div>
     
