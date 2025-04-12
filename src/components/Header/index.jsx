@@ -7,7 +7,7 @@ import Icons from '../Icons';
  
   const Header = ({ setCurrentPage, currentPage }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [activePage, setActivePage] = useState("home"); // To manage active page
+    const [activePage, setActivePage] = useState("home"); 
   
     const menuButtonClick = () => {
       setIsOpen(isOpen ? false : true);
@@ -18,13 +18,9 @@ import Icons from '../Icons';
       setCurrentPage(page);
       setIsOpen(false);
     };
-  
-
 
   return (
     <header className={styles.header}>
-        
-        
         <Navigation
           handleNavClick={handleNavClick}
           className={isOpen ? styles.mobileMenu : styles.desktopNav}
@@ -33,8 +29,7 @@ import Icons from '../Icons';
       <h1 className={styles.pageTitle}>BrewHeaven</h1>
   
       <div className={styles.iconsContainer}>
-        <Icons />
-       
+        <Icons /> 
         </div> 
         <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
           {isOpen ? <X size={32} /> : <List size={32} />}

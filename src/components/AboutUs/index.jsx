@@ -6,7 +6,7 @@ const AboutUs = () => {
     <>
     
       <div className={styles.aboutContainer}>
-        <div className={styles.aboutimg}>
+        <div className={styles.aboutImg}>
           <img src={img} alt="about" />
         </div>
         <div className={styles.textContainer}>

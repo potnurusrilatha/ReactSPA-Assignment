@@ -1,6 +1,5 @@
 
 
-import './App.css'
 import { useState } from 'react'
 import Header from './components/Header/index.jsx'
 import Home from './components/Home/index.jsx'
