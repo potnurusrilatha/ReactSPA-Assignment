@@ -1,6 +1,8 @@
 .iconsWrapper {
   display: flex;
   gap: 15px; 
+  padding: 20px 20px;
+  
 }
 
 .iconContainer {
@@ -10,6 +12,7 @@
   justify-content: center;
   text-align: center;
   width: 100%; 
+  left:0;
 }
 
 .iconsearch,
@@ -26,12 +29,13 @@
 
 @media screen and (max-width: 768px) {
   .iconWrapper {
-      gap: 3px
+    gap: 3px;
+    padding: 10px 10px;
       
   }
 
   .iconText {
-      font-size: 0.875rem;
+    font-size: 0.875rem;
   }
 }
   

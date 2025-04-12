@@ -25,7 +25,7 @@
 
 .desktopNav {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   margin-right: 2rem;
   color: var(--primary-color);
   font-weight: bold;

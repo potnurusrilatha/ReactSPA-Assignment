@@ -20,20 +20,24 @@ import Icons from '../Icons';
 
   return (
     <header className={styles.header}>
+      
+       <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
+          {isOpen ? <X size={32} /> : <List size={32} />}
+        </button>
+
+      <h1 className={styles.pageTitle}>BrewHeaven</h1>
         <Navigation
           handleNavClick={handleNavClick}
           className={isOpen ? styles.mobileMenu : styles.desktopNav}
           currentPage={currentPage}
         />
-      <h1 className={styles.pageTitle}>BrewHeaven</h1>
+      
   
       <div className={styles.iconsContainer}>
         <Icons /> 
       </div> 
 
-      <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
-          {isOpen ? <X size={32} /> : <List size={32} />}
-        </button>
+     
         
     </header>
   )
