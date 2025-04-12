@@ -1,4 +1,4 @@
-import styles from './aboutus.module.css'
+import styles from './aboutUs.module.css'
 import img from '../../assets/images/about.jpg'
 
 const AboutUs = () => {
