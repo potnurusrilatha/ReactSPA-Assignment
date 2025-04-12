@@ -21,17 +21,17 @@ const Products = () => {
               <p>At Brew House, sustainability is an integral part of every decision we make as a company. Our promise is that we will always take action today to ensure a better tomorrow for our guests, our community, our employees and our planet.</p>
         </div>
 
-        <div className={styles.formContainer}>
+        <div className={styles.cropContainer}>
          <div className={styles.productImage1}>
           <img src={image1} alt="product1"/>
           </div>
-          <div className={styles.productFormText}>
-            <h2>Form Crop To Cup</h2>
+          <div className={styles.productCropText}>
+            <h2>Crop To Cup</h2>
             <p>At Brew Haven, we pride ourselves on serving the perfect cup of coffee, but what truly makes our coffee special is the journey it takes—from the farm to your cup. Every step in the process is carefully crafted to ensure the highest quality and the best possible taste.</p>
           </div>
         </div>
 
-        <div className={`${styles.formContainer} ${styles.reverse}`}>
+        <div className={`${styles.cropContainer} ${styles.reverse}`}>
           <div className={styles.productImage2}>
             <img src={image2} alt="product2"/>
             </div>
@@ -41,11 +41,11 @@ const Products = () => {
             </div>
           </div>
 
-          <div className={styles.formContainer}>
+          <div className={styles.cropContainer}>
          <div className={styles.productImage3}>
           <img src={image3} alt="product3"/>
           </div>
-          <div className={styles.productFormText}>
+          <div className={styles.productCropText}>
             <h2>Our Climate Footprint</h2>
             <p>We know that our business and the choices we make in our entire value chain always have an impact on the planet. What we can measure, we can manage, and therefore our first step has been to measure the climate impact of our value chain.To take responsibility and manage the risks of climate change, Espresso House Group has decided to set emission reduction targets in line with climate science. As a first step in this development, Espresso House 2022 is committed to setting climate goals in line with the Science Based Target Initiative (SBTi). Our next step will be to develop the goals, define a path to reach the goal and integrate this into our new sustainability strategy, which will be published in 2024.</p>
           </div>

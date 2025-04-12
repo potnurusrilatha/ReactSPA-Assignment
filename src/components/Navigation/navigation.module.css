@@ -9,7 +9,6 @@
 }
 
 .menuItem::after {
-    background-color: rgb(222, 33, 33);
     content: '';
     display: block;
     height: 2px;
@@ -29,7 +28,6 @@
     top: 100%;
     height: calc(100vh - 100%);
     width: 100vw;
-    background-color: cadetblue;
     transition: left linear .3s;
     overflow: hidden;
 }
@@ -58,7 +56,7 @@
 @media screen and (min-width: 768px) {
     .desktopMenu {
         display: flex;
-        gap: 32px;
+        gap: 30px;
     }
 
     .mobileMenu {

@@ -1,4 +1,3 @@
-
 import styles from './header.module.css'
 import Navigation from "../Navigation";
 import { useState } from "react";
@@ -30,8 +29,9 @@ import Icons from '../Icons';
   
       <div className={styles.iconsContainer}>
         <Icons /> 
-        </div> 
-        <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
+      </div> 
+
+      <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
           {isOpen ? <X size={32} /> : <List size={32} />}
         </button>
         

@@ -13,21 +13,21 @@
 .pageTitle {
   font-size: 3rem;
   text-align: center;
-  color: rgb(30, 74, 48);
+  color: var(--primary-color);
     
 }
 
-.active {
-  color: rgb(30, 74, 48);; 
+/* .active {
+  color: rgb(112, 12, 226); 
   font-weight: bold;
   position: relative;
-}
+} */
 
 .desktopNav {
   display: flex;
   gap: 3rem;
   margin-right: 2rem;
-  color: rgb(30, 74, 48);
+  color: var(--primary-color);
   font-weight: bold;
     
 }
@@ -40,7 +40,7 @@
   width: 80%; 
   height: 2px;
   transform: translateX(-50%);
-  background-color: rgb(30, 74, 48);;
+  background-color: var(--primary-color);
 } 
 
 .mobileMenuButton {
@@ -48,7 +48,7 @@
 }
   
 .desktopNav div:hover {
-  color: rgb(8, 238, 8);
+  color: #506841;
 }
   
 .mobileMenu {
@@ -61,12 +61,13 @@
   right: 0;
   padding: 2rem;
   align-items: center;
-  background-color: rgb(30, 74, 48);
+  background-color: var(--primary-color);
   animation: fadeIn 0.5s ease-in-out forwards;
 }
   
-.mobileMenu div:hover {
-  color: rgb(225, 9, 9);
+.mobileMenu :hover {
+  color: var(--hover-color);
+  text-decoration: underline;
 }
   
 @keyframes fadeIn {
@@ -111,7 +112,7 @@
   }
 }
 
-/* @media screen and (max-width: 328px) {
+/* @media screen and  (max-width: 328px) {
   .header {
     flex-direction: column; 
     align-items: center; 
@@ -136,5 +137,5 @@
     font-size: 1.4rem; 
     padding: 0.8rem 0; 
   }
-} */
-
+}
+ */
