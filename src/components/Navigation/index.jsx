@@ -14,7 +14,7 @@ const Navigation = ({ className, handleNavClick, currentPage }) => {
         <div onClick={() => handleClick("home")} className={isActive("home")}>Home</div>
         <div onClick={() => handleClick("menu")} className={isActive("menu")}> Menu</div> 
         <div onClick={() => handleClick("products")} className={isActive("products")}>Products</div>
-        <div onClick={() => handleClick("aboutus")} className={isActive("about us")}>About us</div>
+        <div onClick={() => handleClick("aboutus")} className={isActive("aboutus")}>AboutUs</div>
       </nav>
     );
   };
