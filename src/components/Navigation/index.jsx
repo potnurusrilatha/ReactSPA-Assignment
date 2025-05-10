@@ -1,4 +1,3 @@
-
 const Navigation = ({ className, handleNavClick, currentPage }) => {
     const handleClick = (page) => {
       handleNavClick(page);

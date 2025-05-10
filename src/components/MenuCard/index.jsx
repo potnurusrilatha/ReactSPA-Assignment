@@ -11,7 +11,8 @@ const Menucard = ({item}) => {
       </div>
       <div className={styles.card}>
         <h3 className={styles.menuImage}>{item.name}</h3>
-        <h3 className={styles.menuimage}>{item.price}</h3>
+        <h3 className={styles.menuprice}>{item.price}</h3>
+        <h3 className={styles.menucategory}>{item.category}</h3>
       </div>
       <div>
         <div className={styles.buttons}>
